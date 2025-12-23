@@ -16,7 +16,7 @@ function NavBar({
         <input
           type="search"
           placeholder="Filtrer (Nom de client, dossier, …)"
-          className="bg-white ml-2 w-2xs px-3 py-1 rounded "
+          className="bg-white ml-2 w-2xs px-3 py-1 rounded border-0 outline-none "
         />
       </div>
     </nav>
