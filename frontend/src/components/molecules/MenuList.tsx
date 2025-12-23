@@ -57,7 +57,10 @@ function MenuList({ isOpen }: { isOpen: boolean }) {
     <ul className="bg-blue-950 flex flex-col gap-6 px-8 py-4 w-3xs h-[95vh]">
       {liste.map((item) => (
         <li key={item.id} className="flex flex-row gap-2">
-          <a href={item.link} className="flex flex-row gap-2 items-center">
+          <a
+            href={item.link}
+            className="flex flex-row gap-2 items-center hover:opacity-80"
+          >
             {item.iconLink}
             <span className="text-white">{item.name}</span>
           </a>
