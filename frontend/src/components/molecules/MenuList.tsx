@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Link } from "react-router-dom";
 import TruckIcon from "../icons/TruckIcon";
 import { UserRoundPlusIcon } from "../icons/UserRoundPlus";
 import { HistoryIcon } from "../icons/HistoryIcon";
@@ -57,13 +58,13 @@ function MenuList({ isOpen }: { isOpen: boolean }) {
     <ul className="bg-blue-950 flex flex-col gap-6 px-8 py-4 w-3xs h-[95vh]">
       {liste.map((item) => (
         <li key={item.id} className="flex flex-row gap-2">
-          <a
-            href={item.link}
+          <Link
+            to={item.link}
             className="flex flex-row gap-2 items-center hover:opacity-80"
           >
             {item.iconLink}
             <span className="text-white">{item.name}</span>
-          </a>
+          </Link>
         </li>
       ))}
     </ul>
