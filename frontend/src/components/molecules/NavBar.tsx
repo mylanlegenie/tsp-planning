@@ -1,4 +1,4 @@
-import Burger from "../icons/Burger";
+import Burger from "../icons/BurgerIcon";
 import { useState } from "react";
 function NavBar() {
   const [isOpen, setIsOpen] = useState(true);
