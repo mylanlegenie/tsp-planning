@@ -2,7 +2,7 @@ function Burger({ isOpen, onClick }: { isOpen: boolean; onClick: () => void }) {
   return (
     <div
       onClick={onClick}
-      className="flex items-center  cursor-pointer h-full w-full select-none"
+      className="flex items-center cursor-pointer h-full select-none"
     >
       {isOpen ? (
         <div className="flex flex-col gap-1">
