@@ -1,4 +1,3 @@
-import "./App.css";
 import NavBar from "./components/molecules/NavBar";
 import MenuList from "./components/molecules/MenuList";
 import { useState } from "react";
