@@ -3,6 +3,7 @@ import NavBar from "./components/molecules/NavBar";
 import MenuList from "./components/molecules/MenuList";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import HomePage from "./components/pages/HomePage";
 function App() {
   const [isOpen, setIsOpen] = useState(true);
   return (
@@ -12,7 +13,7 @@ function App() {
         <MenuList isOpen={isOpen} />
         <main className="flex-1 p-4">
           <Routes>
-            <Route path="/" element={<div>Accueil</div>} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/courses" element={<div>Mes Courses</div>} />
             <Route
               path="/affectation"
