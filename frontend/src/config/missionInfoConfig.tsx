@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
 import type { Information } from "../services/mission/model";
-import TruckIcon from "../components/icons/TruckIcon";
-import { CalendarDaysIcon } from "../components/icons/CalendarIcon";
-import { UserRoundPlusIcon } from "../components/icons/UserRoundPlus";
-
+import { UserIcon } from "../components/icons/UserIcon";
+import { LogoutIcon } from "../components/icons/LogOutIcon";
+import PhoneIcon from "../components/icons/PhoneIcon";
+import { FolderOpenIcon } from "../components/icons/FolderOpenIcon";
 export const missionInfoOrder: (keyof Information)[] = [
   "departureAddress",
   "arrivalAddress",
@@ -21,22 +21,22 @@ export const missionInfoConfig: Record<
 > = {
   departureAddress: {
     label: "Adresse de départ",
-    icon: <TruckIcon />,
+    icon: <LogoutIcon className="text-green-500" />,
   },
   arrivalAddress: {
     label: "Adresse d'arrivée",
-    icon: <TruckIcon />,
+    icon: <LogoutIcon className="text-red-500 rotate-180" />,
   },
   dossierNumber: {
     label: "Dossier n°",
-    icon: <CalendarDaysIcon className="text-amber-500" />,
+    icon: <FolderOpenIcon className="text-blue-500" />,
   },
   name: {
     label: "Client",
-    icon: <UserRoundPlusIcon className="text-amber-500" />,
+    icon: <UserIcon />,
   },
   phoneNumber: {
     label: "Téléphone",
-    icon: <CalendarDaysIcon className="text-amber-500" />,
+    icon: <PhoneIcon className="text-blue-500" />,
   },
 };
