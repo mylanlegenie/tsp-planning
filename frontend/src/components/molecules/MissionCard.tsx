@@ -17,7 +17,7 @@ function MissionCard({ listeMission }: { listeMission: Mission }) {
           {(missionInfoOrder as (keyof Information)[]).map((key) => (
             <div
               key={key}
-              className="flex flex-row items-center gap-2 border-b border-gray-200 last:border-b-0 px-2 py-1"
+              className="flex flex-row items-center gap-2 border-b border-gray-200 last:border-b-0 p-3"
             >
               <div className="w-6 h-6 flex items-center justify-center text-amber-500">
                 {missionInfoConfig[key].icon}
@@ -28,21 +28,21 @@ function MissionCard({ listeMission }: { listeMission: Mission }) {
             </div>
           ))}
         </div>
-        <div className="border border-gray-200 border-0.5 rounded-xs">
+        <div className="border border-gray-200 border-0.5 p-2 rounded-xs">
           <div className="px-2 py-1">
-            <button className="bg-green-600 w-full p-1 hover:bg-green-500 transition-colors cursor-pointer">
+            <button className="bg-green-600 w-full p-1 hover:bg-green-500 rounded-xs transition-colors cursor-pointer">
               <span className="text-white font-bold text-center">
                 Prendre en charge
               </span>
             </button>
           </div>
           <div className="flex items-center justify-around px-2 py-1 gap-5">
-            <button className="bg-amber-500 flex-1 p-1 cursor-pointer">
+            <button className="bg-amber-500 flex-1 p-1 cursor-pointer rounded-xs">
               <span className="text-white font-semibold text-center">
                 Modifier
               </span>
             </button>
-            <button className="bg-blue-800 flex-1 p-1 cursor-pointer">
+            <button className="bg-blue-800 flex-1 p-1 cursor-pointer rounded-xs">
               <span className="text-white font-semibold text-center">
                 Afficher
               </span>
