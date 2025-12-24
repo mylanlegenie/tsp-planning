@@ -6,6 +6,7 @@ function HomePage() {
     {
       id: 1,
       date: "2024-06-01",
+      hour: " 10:00",
       informations: {
         departureAddress: "123 Rue de Paris, 75000 Paris",
         arrivalAddress: "456 Avenue de Lyon, 69000 Lyon",

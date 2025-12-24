@@ -9,5 +9,6 @@ export interface Information {
 export interface Mission {
     id: number;
     date: string;
+    hour: string;
     informations: Information;
 }

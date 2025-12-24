@@ -8,7 +8,9 @@ function MissionCard({ listeMission }: { listeMission: Mission }) {
   return (
     <div className="border border-amber-500 rounded-xs ">
       <div className="bg-amber-500 h-10">
-        <h2 className="text-white px-2">{listeMission.date}</h2>
+        <h2 className="text-white px-2 text-center font-bold p-2">
+          {listeMission.date} {listeMission.hour}
+        </h2>
       </div>
       <div className="p-2">
         <div className="border border-gray-200 border-0.5 rounded-xs">
