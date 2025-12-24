@@ -1,3 +1,4 @@
+import type { Dispatch, SetStateAction } from "react";
 import Burger from "../icons/BurgerIcon";
 import { Link } from "react-router-dom";
 function NavBar({
@@ -5,7 +6,7 @@ function NavBar({
   setIsOpen,
 }: {
   isOpen: boolean;
-  setIsOpen: (isOpen: boolean) => void;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
 }) {
   return (
     <nav className="flex flex-row w-full h-[5vh]">
