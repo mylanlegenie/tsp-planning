@@ -9,15 +9,13 @@ function NavBar({
   setIsOpen: Dispatch<SetStateAction<boolean>>;
 }) {
   return (
-    <nav className="flex flex-row w-full h-[5vh]">
-      <div className="bg-sky-700 px-4 py-2 w-3xs">
+    <nav className="flex flex-row w-full h-[7vh]">
+      <div className="bg-[#3680A9] flex items-center justify-center px-8 w-3xs h-full">
         <Link to="/">
-          <h1 className="text-white text-xl text-center m-auto">
-            Planning TSP
-          </h1>
+          <h1 className="text-white text-xl text-center">Planning TSP</h1>
         </Link>
       </div>
-      <div className="bg-sky-600 px-4 flex flex-6 items-center gap-2 ml-auto">
+      <div className="bg-[#3C8DBC] px-4 flex flex-6 items-center gap-2 ml-auto">
         <Burger onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} />
         <input
           type="search"
